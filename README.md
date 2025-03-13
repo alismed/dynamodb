@@ -20,13 +20,6 @@ To use LocalStack on your local machine, add a profile in the aws cli settings:
 There is a S3 bucket pre-built used to store the terraform state file.
 The bucket name is defined in the `backend.tf` file.
 
-```shell
-mvn -f app clean & mvn -f app build
-```
-
-```shell
-mvn -f app spring-boot:run
-```
 
 ```shell
 terraform -chdir=infra fmt
